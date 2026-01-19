@@ -10,4 +10,11 @@
         - name: checkout code
           uses: actions/checkout@v4
         - name: setup of node
+          uses: actions/setup-node@v4
+        - name: build docker image
+          run: |
+            docker build -t test:01 ./backend
+        - name: Test the image
+          run: |
+            docker run -it test:01
         
