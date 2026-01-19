@@ -1,5 +1,0 @@
-name: Travel Memory App with Github Workflow
-on:
-  push:
-    branches: ["main"]
-    
